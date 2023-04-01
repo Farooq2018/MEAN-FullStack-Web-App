@@ -34,3 +34,5 @@ process.on('SIGTERM', () => {                               4
     process.exit(0);                                        4
   });                                                       4
 });
+//bring in schema
+require('./models/travlr');
