@@ -36,3 +36,4 @@ process.on('SIGTERM', () => {                               4
 });
 //bring in schema
 require('./models/travlr');
+require('./models/user');
