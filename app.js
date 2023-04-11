@@ -50,8 +50,8 @@ app.use("/api", (req, res, next) => {
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/travel', travelRouter)
-app.use('/api', apiRouter)
+app.use('/travel', travelRouter);
+app.use('/api', apiRouter);
 
 app.use((err, req, res, next) => {
   if (err.name === "UnauthorizedError") {
