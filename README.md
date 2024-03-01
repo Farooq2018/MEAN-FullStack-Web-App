@@ -1,4 +1,4 @@
-# cs465-fullstack
+# MEAN-Fullstack-Web-Application
 CS-465 Full Stack Development with MEAN
 Architecture:
 Gateway Traveler Web Application uses MVC architecture. Let's compare and contrast the frontend development tools. For consumer website, we have used Express. Express is a Node.js framework for quickly building efficient and reliable website. The framework uses templating engine Handlebars to utilize and render the HTML pages dynamically. Benefit of using MEAN stack to build a website is that we use only one programming language, Javascript across Frontend and Backend.The main advantage of Single Page Application (SPA) as a name suggests it's only single page, which continuously gets updated by dynamically rewriting the current page rather than loading entire new pages from a server unlike traditional multi-page application. So, there is no waiting time for a page to reload, which results in quick loading time and seamless user experience. Let's talk about disadvantages, the main disadvantage is Angular framework is a huge framework and uses a lot of Browser resources. It is also prone to security issues especially cross-site scripting attacks.
