@@ -1,14 +1,113 @@
-# MEAN-Fullstack-Web-Application
-Full Stack Web App Development with MEAN
-Architecture:
-Gateway Traveler Web Application uses MVC architecture. Let's compare and contrast the frontend development tools. For consumer website, we have used Express. Express is a Node.js framework for quickly building efficient and reliable website. The framework uses templating engine Handlebars to utilize and render the HTML pages dynamically. Benefit of using MEAN stack to build a website is that we use only one programming language, Javascript across Frontend and Backend.The main advantage of Single Page Application (SPA) as a name suggests it's only single page, which continuously gets updated by dynamically rewriting the current page rather than loading entire new pages from a server unlike traditional multi-page application. So, there is no waiting time for a page to reload, which results in quick loading time and seamless user experience. Let's talk about disadvantages, the main disadvantage is Angular framework is a huge framework and uses a lot of Browser resources. It is also prone to security issues especially cross-site scripting attacks.
-NoSQL MongoDB database is used mainly with non structured data and it's a lot faster and efficient than traditional Relational Databases.
+# MEAN-FullStack-Web-App
 
-Functionality:
-Javascript and JSON are two completely different thing. Javascript Object Notation (JSON) is used for data transmission across frontend and backend while Javascript is a programming used for Frontend development. JSON transmit data based on user's request whether it's a GET or POST request. The project is modular and written in multiple files. So, it is easier to manage and debug the code.
+Welcome to the MEAN-FullStack-Web-App! This project is a comprehensive web application built using the MEAN (MongoDB, Express, Angular, Node.js) stack. It offers a fully functional backend, a rich frontend, and seamless integration between the two.
 
-Testing:
-Methods for testing the web application that I have used is unit testing and API endpoints testing. Unit testing to make sure each component of website is working properly. API endpoints testing for all the APIs are accessible to the users.
+## Table of Contents
 
-Reflection:
-This course tremendously helped me with understanding the concept of Full Stack Development and how it all comes together to make working website. It really gave me clear view and understanding how everything works behind the scene. 
+- [Project Overview](#project-overview)
+- [Directory Structure](#directory-structure)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Project Overview
+
+This web application is designed to manage travel trips. Users can create, edit, and view trips, with features such as authentication, trip listings, and detailed trip information.
+
+## Directory Structure
+
+```
+Farooq2018-MEAN-FullStack-Web-App/
+├── README.md
+├── app.js
+├── package.json
+├── .seedgooserc.js
+├── app_admin/
+│   ├── README.md
+│   ├── angular.json
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── tslint.json
+│   ├── .editorconfig
+│   ├── .gitignore
+│   ├── e2e/
+│   └── src/
+├── app_api/
+│   ├── config/
+│   ├── controllers/
+│   ├── database/
+│   └── routes/
+├── app_server/
+│   ├── controllers/
+│   ├── routes/
+│   └── views/
+├── bin/
+├── data/
+├── public/
+└── assets/
+```
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/username/Farooq2018-MEAN-FullStack-Web-App.git
+   cd Farooq2018-MEAN-FullStack-Web-App
+   ```
+
+2. **Install dependencies for the server and admin app:**
+   ```bash
+   npm install
+   cd app_admin
+   npm install
+   ```
+
+## Running the Application
+
+1. **Start the backend server:**
+   ```bash
+   npm start
+   ```
+
+2. **Start the frontend application:**
+   ```bash
+   cd app_admin
+   ng serve
+   ```
+
+   Navigate to `http://localhost:4200/` in your browser to view the application.
+
+## Features
+
+- **Authentication:** Secure user login and registration.
+- **Trip Management:** Add, edit, and view trips.
+- **Responsive Design:** User-friendly interface for various devices.
+- **RESTful API:** Backend API for handling data and business logic.
+
+## Technologies Used
+
+- **Frontend:** Angular, TypeScript
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+- **Other Tools:** Passport.js for authentication, Mongoose for MongoDB object modeling, Karma for testing.
+
+## Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes.
+4. Push your branch and create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+Thank you for checking out this project. If you have any questions or need further assistance, please feel free to reach out!
